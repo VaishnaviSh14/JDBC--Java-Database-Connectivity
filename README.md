@@ -53,3 +53,19 @@ be injected to the query at the runtime.
 
 => Values to the PreparedStatement object will be injected using setXXXXX(int
 pos,xxxxx value) throws SQLException method.
+
+## Working with Date Operation
++++++++++++++++++++++++++++
+
+Formats of Date in MySQL :: YYYY-MM-DD
+Formats of Date in Oracle :: DD-MM-YY
+While writing the program, we expect the date information from the user as per
+there timezone,so while writing the code we can write
+by keeping particular database in mind, so we following the conversion format to
+store the date information in database.
+EndUser(Input) --SimpleDateFormat(parse)------> java.util.Date ------->
+java.sql.Date
+
+|-> use
+
+preparedStatement and Set Date ----> DB specific format.
