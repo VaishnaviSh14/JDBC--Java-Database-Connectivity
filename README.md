@@ -7,7 +7,9 @@ Prerequisites
 Before you begin, make sure you have the following installed and configured:
 
 Java Development Kit (JDK) - Java 8 or higher
+
 MySQL Database Server - Install and configure MySQL on your system.
+
 MySQL JDBC Driver - Download and include the MySQL JDBC driver JAR in your project.
 
 ## Steps given by SUNMS to interact with Database
