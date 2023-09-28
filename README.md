@@ -36,14 +36,20 @@ CREATE TABLE users (
 
 ## Properties
 db.url=jdbc:mysql://localhost:3306/your_database_name
+
 db.username=your_mysql_username
+
 db.password=your_mysql_password
 
 ## PreparedStatement
 => These statements are used to transfer the query during the compilation only.
+
 => These statements are also called as Pre-Compiled Query.
+
 => Performance of these object are high compared to Statement object.
+
 => In case of PreparedStatement the query will be incomplete and the values will
 be injected to the query at the runtime.
+
 => Values to the PreparedStatement object will be injected using setXXXXX(int
 pos,xxxxx value) throws SQLException method.
